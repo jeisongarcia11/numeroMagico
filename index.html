@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Numero mágico</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+
+  <body>
+
+    <div id="clock" class="light">
+			<div class="display">
+				<div class="weekdays"></div>
+				<div class="ampm"></div>
+				<div class="alarm"></div>
+				<div class="digits"></div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+
+    <div class="container">
+      <div class="card-container">
+        <h1>Adivina el número mágico</h1>
+
+        <p>Se ha generado un número aleatorio entre 1 y 1000. dispones de 10 turnos o menos. Se te informará si tu número es más alto o más bajo.</p>
+
+        <div class="form">
+          <label for="guessField">Adivina el numero: </label>
+          <input type="text" id="guessField" class="guessField">
+          <input type="submit" value="Enviar Respuesta" class="guessSubmit">
+        </div>
+
+        <div class="resultParas">
+          <p class="guesses"></p>
+          <p class="lastResult"></p>
+          <p class="lowOrHi"></p>
+        </div>
+      </div>
+      
+    </div>    
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
